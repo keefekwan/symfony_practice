@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="General\LoginBundle\Entity\Country" table="country">
+    <id name="code" type="integer" column="Code">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="Name" length="52" nullable="false"/>
+    <field name="continent" type="string" column="Continent" length="50" nullable="false"/>
+    <field name="region" type="string" column="Region" length="26" nullable="false"/>
+    <field name="surfacearea" type="float" column="SurfaceArea" nullable="false"/>
+    <field name="indepyear" type="smallint" column="IndepYear" nullable="true"/>
+    <field name="population" type="integer" column="Population" nullable="false"/>
+    <field name="lifeexpectancy" type="float" column="LifeExpectancy" nullable="true"/>
+    <field name="gnp" type="float" column="GNP" nullable="true"/>
+    <field name="gnpold" type="float" column="GNPOld" nullable="true"/>
+    <field name="localname" type="string" column="LocalName" length="45" nullable="false"/>
+    <field name="governmentform" type="string" column="GovernmentForm" length="45" nullable="false"/>
+    <field name="headofstate" type="string" column="HeadOfState" length="60" nullable="true"/>
+    <field name="capital" type="integer" column="Capital" nullable="true"/>
+    <field name="code2" type="string" column="Code2" length="2" nullable="false"/>
+  </entity>
+</doctrine-mapping>

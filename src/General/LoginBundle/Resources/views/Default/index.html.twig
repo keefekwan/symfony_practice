@@ -1,0 +1,33 @@
+{# src/General/LoginBundle/Resources/views/Default/index.html.twig #}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign in &middot; Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link href="{{asset('bundles/generallogin/css/bootstrap.css')}}" rel="stylesheet">
+        <link href="{{asset('bundles/generallogin/css/bootstrap-responsive.css')}}" rel="stylesheet">
+        <link href="{{asset('bundles/generallogin/css/parsley/parsley.css')}}" rel="stylesheet">
+{%block stylesheets %}
+{%endblock%}
+        </head>
+
+        <body>
+
+{%block container %}
+{%endblock%}
+
+
+            <script src="{{asset('bundles/generallogin/js/jquery.js')}}"></script>
+            <script src="{{asset('bundles/generallogin/js/bootstrap.js')}}"></script>
+            <script src="{{asset('bundles/generallogin/js/parsley/parsley.min.js')}}"></script>
+            <script src="{{asset('bundles/generallogin/js/parsley/parsley-standalone.min.js')}}"></script>
+            <script src="{{asset('bundles/generallogin/js/parsley/parsley.extend.min.js')}}"></script>
+{%block javascripts %}
+ {%endblock%}
+        </body>
+    </html>
+

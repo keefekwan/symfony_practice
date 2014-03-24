@@ -1,0 +1,4 @@
+general_login:
+    resource: "@GeneralLoginBundle/Resources/config/routing.yml"
+    prefix:   /
+

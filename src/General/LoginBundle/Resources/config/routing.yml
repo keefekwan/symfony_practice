@@ -1,0 +1,11 @@
+general_login_homepage:
+    path:  /login
+    defaults: { _controller: GeneralLoginBundle:Default:index }
+
+general_login_signup:
+    path: /signup
+    defaults: { _controller: GeneralLoginBundle:Default:signup }
+
+general_login_logout:
+    path: /logout
+    defaults: { _controller: GeneralLoginBundle:Default:logout }

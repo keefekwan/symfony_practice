@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+            <link href="{{ asset('css/bootstrap-theme.css') }}" rel="stylesheet">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    <div class="container">
+        <div id="header" class="hero-unit">
+            <h1>Search Engine Symfony2</h1>
+            <h2>Create a simple search engine</h2>
+        </div>
+        <div class="row">
+            <div id="content" class="span12">
+                <!-- our main container -->
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

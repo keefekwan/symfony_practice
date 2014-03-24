@@ -1,0 +1,13 @@
+{# src/General/LoginBundle/Resources/views/Default/welcome.html.twig #}
+{%extends "GeneralLoginBundle:Default:index.html.twig"%}
+{%block stylesheets %}
+
+{%endblock%}
+   {%block container %}
+<div class="container">
+    <h4>Successfully logged in: {{name}}</h4><br>
+    <h2>Countries</h2>
+ {% include "GeneralLoginBundle:Default:table.html.twig"%}
+</div> 
+<a href="{{ path('general_login_logout') }}" >Logout</a>
+    {%endblock%}
